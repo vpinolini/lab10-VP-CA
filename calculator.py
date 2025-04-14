@@ -16,6 +16,12 @@ def logarithm(a,b):
 def exponent(a,b):
     if a < 0 and b % 1 != 0:
         raise ValueError
-    elif a = 0 and b <= 0:
+    elif a == 0 and b <= 0:
         raise ValueError
     return a**b
+def square_root(a):
+    if a < 0:
+        raise ValueError
+    return math.sqrt(a)
+def hypotenuse(a,b):
+    return math.hypot(a,b)
